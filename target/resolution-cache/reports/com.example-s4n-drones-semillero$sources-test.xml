@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.example"
+		module="s4n-drones-semillero$sources"
+		revision="0.1.0-SNAPSHOT"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180619170834"/>
+	<dependencies>
+		<module organisation="com.novocode" name="junit-interface">
+			<revision name="0.11" status="release" pubdate="20140814032745" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/sbt/junit-interface/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<license name="Two-clause BSD-style license" url="http://github.com/sbt/junit-interface/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2865" time="0" location="/home/s4n/.ivy2/cache/com.novocode/junit-interface/ivy-0.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.11/junit-interface-0.11.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="0.11" rev-constraint-default="0.11" rev-constraint-dynamic="0.11" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-interface" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15834" time="0" location="/home/s4n/.ivy2/cache/com.novocode/junit-interface/srcs/junit-interface-0.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.11/junit-interface-0.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20130628174435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2589" time="0" location="/home/s4n/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="test-interface" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18792" time="0" location="/home/s4n/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.vintage" name="junit-vintage-engine">
+			<revision name="4.12.0-M5" status="release" pubdate="20170704114242" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3734" time="0" location="/home/s4n/.ivy2/cache/org.junit.vintage/junit-vintage-engine/ivy-4.12.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/4.12.0-M5/junit-vintage-engine-4.12.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="4.12.0-M5" rev-constraint-default="4.12.0-M5" rev-constraint-dynamic="4.12.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-vintage-engine" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="31936" time="0" location="/home/s4n/.ivy2/cache/org.junit.vintage/junit-vintage-engine/srcs/junit-vintage-engine-4.12.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/vintage/junit-vintage-engine/4.12.0-M5/junit-vintage-engine-4.12.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.jupiter" name="junit-jupiter-engine">
+			<revision name="5.0.0-M5" status="release" pubdate="20170704113919" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3637" time="0" location="/home/s4n/.ivy2/cache/org.junit.jupiter/junit-jupiter-engine/ivy-5.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.0.0-M5/junit-jupiter-engine-5.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="5.0.0-M5" rev-constraint-default="5.0.0-M5" rev-constraint-dynamic="5.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-jupiter-engine" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="72865" time="0" location="/home/s4n/.ivy2/cache/org.junit.jupiter/junit-jupiter-engine/srcs/junit-jupiter-engine-5.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.0.0-M5/junit-jupiter-engine-5.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.jupiter" name="junit-jupiter-api">
+			<revision name="5.0.0-M5" status="release" pubdate="20170704113849" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="2869" time="0" location="/home/s4n/.ivy2/cache/org.junit.jupiter/junit-jupiter-api/ivy-5.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.0.0-M5/junit-jupiter-api-5.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="5.0.0-M5" rev-constraint-default="5.0.0-M5" rev-constraint-dynamic="5.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-jupiter-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73906" time="0" location="/home/s4n/.ivy2/cache/org.junit.jupiter/junit-jupiter-api/srcs/junit-jupiter-api-5.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.0.0-M5/junit-jupiter-api-5.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-module-javaagent">
+			<revision name="1.5.1" status="release" pubdate="20130619113031" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5129" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-module-javaagent/ivy-1.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-module-javaagent/1.5.1/powermock-module-javaagent-1.5.1.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="powermock-module-javaagent" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="138157" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-module-javaagent/srcs/powermock-module-javaagent-1.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-module-javaagent/1.5.1/powermock-module-javaagent-1.5.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-api-mockito">
+			<revision name="1.5.1" status="release" pubdate="20130619112117" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5207" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/ivy-1.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito/1.5.1/powermock-api-mockito-1.5.1.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="powermock-api-mockito" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54491" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/srcs/powermock-api-mockito-1.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito/1.5.1/powermock-api-mockito-1.5.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mockito" name="mockito-all">
+			<revision name="1.9.5" status="release" pubdate="20121014051023" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="The MIT License" url="http://code.google.com/p/mockito/wiki/License"/>
+				<metadata-artifact status="no" details="" size="2478" time="0" location="/home/s4n/.ivy2/cache/org.mockito/mockito-all/ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="mockito-all" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="759072" time="0" location="/home/s4n/.ivy2/cache/org.mockito/mockito-all/srcs/mockito-all-1.9.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mockito" name="mockito-core">
+			<revision name="2.7.22" status="release" pubdate="20170407094341" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mockito.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<license name="The MIT License" url="http://github.com/mockito/mockito/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2949" time="0" location="/home/s4n/.ivy2/cache/org.mockito/mockito-core/ivy-2.7.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mockito/mockito-core/2.7.22/mockito-core-2.7.22.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="2.7.22" rev-constraint-default="2.7.22" rev-constraint-dynamic="2.7.22" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="mockito-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="435573" time="0" location="/home/s4n/.ivy2/cache/org.mockito/mockito-core/srcs/mockito-core-2.7.22-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mockito/mockito-core/2.7.22/mockito-core-2.7.22-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.bytebuddy" name="byte-buddy">
+			<revision name="1.6.11" status="release" pubdate="20170312132344" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7765" time="0" location="/home/s4n/.ivy2/cache/net.bytebuddy/byte-buddy/ivy-1.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.6.11/byte-buddy-1.6.11.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.6.11" rev-constraint-default="1.6.11" rev-constraint-dynamic="1.6.11" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="byte-buddy" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1412634" time="0" location="/home/s4n/.ivy2/cache/net.bytebuddy/byte-buddy/srcs/byte-buddy-1.6.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.6.11/byte-buddy-1.6.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.platform" name="junit-platform-runner">
+			<revision name="1.0.0-M5" status="release" pubdate="20170704114158" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3029" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-runner/ivy-1.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-runner/1.0.0-M5/junit-platform-runner-1.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0.0-M5" rev-constraint-default="1.0.0-M5" rev-constraint-dynamic="1.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-platform-runner" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11271" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-runner/srcs/junit-platform-runner-1.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-runner/1.0.0-M5/junit-platform-runner-1.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.platform" name="junit-platform-suite-api">
+			<revision name="1.0.0-M5" status="release" pubdate="20170704114211" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="2745" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-suite-api/ivy-1.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-suite-api/1.0.0-M5/junit-platform-suite-api-1.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0.0-M5" rev-constraint-default="1.0.0-M5" rev-constraint-dynamic="1.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-platform-suite-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15131" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-suite-api/srcs/junit-platform-suite-api-1.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-suite-api/1.0.0-M5/junit-platform-suite-api-1.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.5" status="release" pubdate="20170112234021" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3457" time="0" location="/home/s4n/.ivy2/cache/org.objenesis/objenesis/ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5/objenesis-2.5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56094" time="0" location="/home/s4n/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5/objenesis-2.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.platform" name="junit-platform-launcher">
+			<revision name="1.0.0-M5" status="release" pubdate="20170704114144" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="2741" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-launcher/ivy-1.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-launcher/1.0.0-M5/junit-platform-launcher-1.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0.0-M5" rev-constraint-default="1.0.0-M5" rev-constraint-dynamic="1.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-platform-launcher" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37157" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-launcher/srcs/junit-platform-launcher-1.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-launcher/1.0.0-M5/junit-platform-launcher-1.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.platform" name="junit-platform-engine">
+			<revision name="1.0.0-M5" status="release" pubdate="20170704114054" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3001" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-engine/ivy-1.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-engine/1.0.0-M5/junit-platform-engine-1.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0.0-M5" rev-constraint-default="1.0.0-M5" rev-constraint-dynamic="1.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-platform-engine" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73595" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-engine/srcs/junit-platform-engine-1.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-engine/1.0.0-M5/junit-platform-engine-1.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.opentest4j" name="opentest4j">
+			<revision name="1.0.0-M2" status="release" pubdate="20170401051410" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/ota4j-team/opentest4j" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/home/s4n/.ivy2/cache/org.opentest4j/opentest4j/ivy-1.0.0-M2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/opentest4j/opentest4j/1.0.0-M2/opentest4j-1.0.0-M2.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0.0-M2" rev-constraint-default="1.0.0-M2" rev-constraint-dynamic="1.0.0-M2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="opentest4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7452" time="0" location="/home/s4n/.ivy2/cache/org.opentest4j/opentest4j/srcs/opentest4j-1.0.0-M2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/opentest4j/opentest4j/1.0.0-M2/opentest4j-1.0.0-M2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.junit.platform" name="junit-platform-commons">
+			<revision name="1.0.0-M5" status="release" pubdate="20170704114008" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org/junit5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="2544" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-commons/ivy-1.0.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-commons/1.0.0-M5/junit-platform-commons-1.0.0-M5.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.0.0-M5" rev-constraint-default="1.0.0-M5" rev-constraint-dynamic="1.0.0-M5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit-platform-commons" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45996" time="0" location="/home/s4n/.ivy2/cache/org.junit.platform/junit-platform-commons/srcs/junit-platform-commons-1.0.0-M5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/junit/platform/junit-platform-commons/1.0.0-M5/junit-platform-commons-1.0.0-M5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-api-support">
+			<revision name="1.5.1" status="release" pubdate="20130619112012" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5198" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/ivy-1.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-support/1.5.1/powermock-api-support-1.5.1.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="powermock-api-support" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="16218" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/srcs/powermock-api-support-1.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-api-support/1.5.1/powermock-api-support-1.5.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-core">
+			<revision name="1.5.1" status="release" pubdate="20130619111941" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.powermock.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4478" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/ivy-1.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-core/1.5.1/powermock-core-1.5.1.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="powermock-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="83429" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/srcs/powermock-core-1.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-core/1.5.1/powermock-core-1.5.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.18.0-GA" status="release" pubdate="20130617090649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3199" time="0" location="/home/s4n/.ivy2/cache/org.javassist/javassist/ivy-3.18.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="3.18.0-GA" rev-constraint-default="3.18.0-GA" rev-constraint-dynamic="3.18.0-GA" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="513054" time="0" location="/home/s4n/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.18.0-GA-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.powermock" name="powermock-reflect">
+			<revision name="1.5.1" status="release" pubdate="20130619111911" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4329" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/ivy-1.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-reflect/1.5.1/powermock-reflect-1.5.1.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="powermock-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42509" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/srcs/powermock-reflect-1.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-reflect/1.5.1/powermock-reflect-1.5.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.bytebuddy" name="byte-buddy-agent">
+			<revision name="1.6.11" status="release" pubdate="20170312132336" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7979" time="0" location="/home/s4n/.ivy2/cache/net.bytebuddy/byte-buddy-agent/ivy-1.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.6.11/byte-buddy-agent-1.6.11.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.6.11" rev-constraint-default="1.6.11" rev-constraint-dynamic="1.6.11" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="byte-buddy-agent" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14751" time="0" location="/home/s4n/.ivy2/cache/net.bytebuddy/byte-buddy-agent/srcs/byte-buddy-agent-1.6.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.6.11/byte-buddy-agent-1.6.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.vavr" name="vavr">
+			<revision name="0.9.2" status="release" pubdate="20171124024950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://vavr.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6601" time="0" location="/home/s4n/.ivy2/cache/io.vavr/vavr/ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/vavr/vavr/0.9.2/vavr-0.9.2.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="vavr" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="382583" time="0" location="/home/s4n/.ivy2/cache/io.vavr/vavr/srcs/vavr-0.9.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/vavr/vavr/0.9.2/vavr-0.9.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.vavr" name="vavr-match">
+			<revision name="0.9.2" status="release" pubdate="20171124024753" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://vavr.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6300" time="0" location="/home/s4n/.ivy2/cache/io.vavr/vavr-match/ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/vavr/vavr-match/0.9.2/vavr-match-0.9.2.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="vavr-match" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15473" time="0" location="/home/s4n/.ivy2/cache/io.vavr/vavr-match/srcs/vavr-match-0.9.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/vavr/vavr-match/0.9.2/vavr-match-0.9.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.12" status="release" pubdate="20141204111743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3317" time="0" location="/home/s4n/.ivy2/cache/junit/junit/ivy-4.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="200355" time="0" location="/home/s4n/.ivy2/cache/junit/junit/srcs/junit-4.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120709160802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2617" time="0" location="/home/s4n/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="com.example" name="s4n-drones-semillero$sources" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="32624" time="0" location="/home/s4n/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
