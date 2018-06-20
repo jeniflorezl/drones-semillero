@@ -1,0 +1,2 @@
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/drones-semillero/src/main/java/co/com/s4n/semillero/ejercicio/files/ReadAndFile.java:40:1: variable path is already defined in method write(java.util.List<co.com.s4n.semillero.ejercicio.dominio.entidades.Dron>)[0m
+[0m[[0m[31merror[0m] [0m[0m            Try<Path> path = Try.of(()->[0m

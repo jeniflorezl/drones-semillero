@@ -14,9 +14,7 @@ lazy val root = (project in file(".")).
     name := "s4n-drones-semillero",
     libraryDependencies ++= Seq(
       "io.vavr" % "vavr" % "0.9.2",
-      "org.junit.platform" % "junit-platform-runner" % "1.0.0-M5" % "test",
-      "org.junit.jupiter" % "junit-jupiter-engine" % "5.0.0-M5" % "test",
-      "org.junit.vintage" % "junit-vintage-engine" % "4.12.0-M5" % "test",
+      "junit" % "junit" % "4.12" % "test",
       "org.mockito" % "mockito-core" % "2.7.22" % "test",
       "org.powermock" % "powermock-api-mockito" % "1.5.1" % "test",
       "org.powermock" % "powermock-module-javaagent" % "1.5.1" % "test",
