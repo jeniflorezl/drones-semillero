@@ -4,8 +4,11 @@ import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
 import co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Movimientos;
-import co.com.s4n.semillero.ejercicio.files.ReadAndFile;
+import co.com.s4n.semillero.ejercicio.files.LeerEscribir;
+import io.vavr.collection.Iterator;
 import io.vavr.concurrent.Future;
+import io.vavr.control.Try;
+import org.mockito.Mock;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,81 +20,47 @@ public class EjecucionFunciones {
     static List<Dron> resultados = new ArrayList<>();
     static int cont = 0;
     static int cantidadAlmuerzos = 3;
+    static int limite = 10;
 
 
-    public static List<Dron> testDron(){
+    public static List<Dron> ejecutarDron(){
 
-        /*List<String> almuerzos = Arrays.asList("AAAAIAAD", "DDAIAD", "AAIADAD", "AA", "IDAA", "AAI")
-                .stream()
-                .collect(Collectors.groupingBy());
-*/
-        List<String> almuerzos = ReadAndFile.read();
+        List<String> almuerzos = LeerEscribir.read();
+        io.vavr.collection.List<String> listaAlmuerzos = io.vavr.collection.List.ofAll(almuerzos);
 
-        for (int j = 0; j < almuerzos.size(); j++){
-            System.out.println(almuerzos.get(j));
-        }
-
-        io.vavr.collection.List<String> ruta = io.vavr.collection.List.of();
-        for (int i = cont; i<almuerzos.size();i++){
-            ruta = cantidadAlmuerzos(almuerzos, cont, cantidadAlmuerzos);
-        }
-
-        //Dron dronRes = realizarEntrega(ruta);
-
-        //resultados.add(dronRes);
+        Iterator<io.vavr.collection.List<String>> almuerzosAgru = iteradorLista(listaAlmuerzos,cantidadAlmuerzos);
+        almuerzosAgru.forEach(s ->{
+            realizarEntrega(s);
+        });
 
         for (int j = 0; j < resultados.size(); j++){
-            System.out.println(resultados.get(j));
+            System.out.println("resultados "+resultados.get(j));
         }
 
-        ReadAndFile.write(resultados);
+        LeerEscribir.write(resultados);
 
         return resultados;
     }
 
-    public static io.vavr.collection.List cantidadAlmuerzos(List<String> almuerzos, int contador, int cantidad){
-        io.vavr.collection.List<String >rutas = io.vavr.collection.List.of();
-        int i=0;
-        while (i < cantidadAlmuerzos && i < almuerzos.size()){
-            rutas.append(almuerzos.get(contador+i));
-            i++;
-        }
+    public static void realizarEntrega(io.vavr.collection.List<String> ruta){
 
-        return rutas;
-    }
+        //Future<Dron> inicio = Future.of(() -> new Dron(0,0, Direccion.NORTE));
 
-    public static Dron realizarEntrega(io.vavr.collection.List<String> ruta){
-
-        Future<Dron> inicio = Future.of(() -> new Dron(0,0, Direccion.NORTE));
-
-        Future<String> ruta1 = Future.of(()->ruta.get(0));
+        /*Future<String> ruta1 = Future.of(()->ruta.get(0));
         Future<String> ruta2 = Future.of(()->ruta.get(1));
-        Future<String> ruta3 = Future.of(()->ruta.get(2));
+        Future<String> ruta3 = Future.of(()->ruta.get(2));*/
 
-        Dron d = new Dron(0,0,Direccion.NORTE);
-        String inicio1 = d.toString();
-
-        String fold = ruta.fold(inicio1, (s1, s2) -> convertir(s1, s2));
-        String[] dS = fold.split("\\,");
-        Dron dRes = new Dron(Integer.parseInt(dS[0]),Integer.parseInt(dS[1]), cambiar(dS[2]));
-
-/*
-
-        Future<Dron> finalDron = Future.fold()
-
-        Future<Dron> finalDron = inicio.flatMap(r -> Future.of(()->
-                ejecutarFuncion(r,ruta.get(0))).flatMap(r2 -> Future.of(()->
-                ejecutarFuncion(r2, ruta.get(1))).flatMap(r3 -> Future.of(()->
-                ejecutarFuncion(r3, ruta.get(2))))));
-*/
-
-        return dRes;
+        Dron dronInicio = new Dron(0,0,Direccion.NORTE);
+        String zero = dronInicio.toString();
+        String fold = ruta.fold(zero, (s1, s2) -> operar(s1, s2));
+        String[] dron = fold.split("\\,");
+        Dron dRes = new Dron(Integer.parseInt(dron[0]),Integer.parseInt(dron[1]), cambiarDireccion(dron[2]));
 
     }
 
-    public static Direccion cambiar(String n){
+    public static Direccion cambiarDireccion(String direccion){
         Direccion dir = Direccion.NORTE;
-        switch (n){
+        switch (direccion){
             case "NORTE":
                 dir = Direccion.NORTE;
                 break;
@@ -104,24 +73,35 @@ public class EjecucionFunciones {
             case "OESTE":
                 dir = Direccion.OESTE;
                 break;
-                default:
-                    break;
+            default:
+                break;
         }
         return dir;
     }
 
-    public static String convertir(String posicion, String ruta){
-        String[] dS = posicion.split("\\,");
-        Dron d = new Dron(Integer.parseInt(dS[0]),Integer.parseInt(dS[1]), cambiar(dS[2]));
-        Dron dnue = ejecutarFuncion(d,ruta);
-        resultados.add(dnue);
-        return dnue.toString();
+    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int tamaño){
+        return almuerzos.grouped(tamaño);
+    }
+
+    public static String operar(String posicion, String ruta){
+        String[] dron1 = posicion.split("\\,");
+        Dron d = new Dron(Integer.parseInt(dron1[0]),Integer.parseInt(dron1[1]), cambiarDireccion(dron1[2]));
+        Dron dronNuevo = ejecutarFuncion(d,ruta);
+        Try<String> dronMoved = validarPosicion(dronNuevo);
+        //System.out.println(dronMoved.get());
+        if (dronMoved.isSuccess()){
+            //System.out.println(validarPosicion().get()));
+            resultados.add(dronNuevo);
+        }
+        return dronNuevo.toString();
     }
 
     public static Dron ejecutarFuncion(Dron dron, String ruta){
         Dron dronR = dron;
+        boolean ban = true;
         for (int j = 0; j<ruta.length();j++){
             char c = ruta.charAt(j);
+            //Movimientos mover = Movimientos.valueOf(String.valueOf(c));
             switch (c){
                 case 'A':
                     dronR = ServicioDron.ahead(dronR);
@@ -133,10 +113,26 @@ public class EjecucionFunciones {
                     dronR = ServicioDron.left(dronR);
                     break;
                 default:
-                    System.out.println("Error, ruta invalid!");
+                    System.out.println("Error, ruta invalida!");
+                    ban = false;
                     break;
             }
+            if (ban==false){
+                break;
+            }
+
         }
         return dronR;
+    }
+
+    public static Try<String> validarPosicion(Dron dron){
+        Dron d = dron;
+        Integer x = dron.getX();
+        Integer y = dron.getY();
+        if (x<=limite && y<=limite){
+            return Try.of(()-> "ok");
+        }else{
+            return Try.of(()-> { throw new Error("Error 1");});
+        }
     }
 }

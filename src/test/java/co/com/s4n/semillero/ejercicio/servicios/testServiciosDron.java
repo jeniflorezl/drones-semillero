@@ -1,16 +1,22 @@
 package co.com.s4n.semillero.ejercicio.servicios;
 
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
-import co.com.s4n.semillero.ejercicio.files.ReadAndFile;
 import co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
+import co.com.s4n.semillero.ejercicio.files.LeerEscribir;
+import io.vavr.control.Try;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
+//@RunWith(PowerMockRunner.class)
+//@PrepareForTestI(fullQualityfiedNames = "co.com.s4n.semillero.ejercicio.servicios")
 public class testServiciosDron {
 
     @Test
@@ -51,41 +57,33 @@ public class testServiciosDron {
     }
 
     @Test
-    public void test3(){
+    public void testEjecucionDron(){
         List<Dron> resultados = Arrays.asList();
-        resultados = EjecucionFunciones.testDron();
-
-        //assertEquals(new Integer(0), resultados.get(0).getX());
-        //assertEquals(new Integer(3), resultados.get(0).getY());
-        //assertEquals(Direccion.NORTE, resultados.get(0).getDireccion());
+        resultados = EjecucionFunciones.ejecutarDron();
 
         for (int i = 0; i<resultados.size();i++){
             System.out.println("("+resultados.get(i).getX()+","+resultados.get(i).getY()+")"
                     +resultados.get(i).getDireccion());
         }
-        /*
-        List<String> almuerzos = ReadAndFile.read();
-        for (int i = 0; i< almuerzos.size(); i++){
-            System.out.println(almuerzos.get(i));
-        }*/
+
     }
 
     @Test
-    public void test4(){
+    public void testLeer(){
+        List<String> almuerzos = LeerEscribir.read();
+        assertTrue(almuerzos.size()>0);
 
-        List<String> almuerzos = ReadAndFile.read();
-        for (int i = 0; i< almuerzos.size(); i++){
-            System.out.println(almuerzos.get(i));
-        }
     }
 
     @Test
-    public void test5(){
-        List<Dron> almuerzos = Arrays.asList(
+    public void testEscribir(){
+        List<Dron> listaAlmuerzos = Arrays.asList(
                 new Dron(1,1,Direccion.NORTE),
-                new Dron(2,3,Direccion.ESTE)
-                );
-        ReadAndFile.write(almuerzos);
+                new Dron(2,2,Direccion.ESTE),
+                new Dron(3,2, Direccion.SUR)
+        );
+        Try<String> escribir = LeerEscribir.write(listaAlmuerzos);
+        assertEquals("archivo generado correctamente.",escribir.get());
 
     }
 }

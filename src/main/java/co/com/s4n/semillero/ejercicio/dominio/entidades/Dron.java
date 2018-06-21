@@ -14,9 +14,7 @@ public class Dron {
         this.direccion = direccion;
     }
 
-    public Integer getX() {
-        return this.x;
-    }
+    public Integer getX() { return this.x; }
 
     public Integer getY() {
         return this.y;

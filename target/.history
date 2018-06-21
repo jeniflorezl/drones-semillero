@@ -38,5 +38,9 @@ testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
 clean
 compile
 testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+clean
 compile
 testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron

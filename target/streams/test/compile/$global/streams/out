@@ -1,2 +1,2 @@
-[0m[[0m[0minfo[0m] [0m[0m/home/s4n/Documents/drones-semillero/src/test/java/co/com/s4n/semillero/ejercicio/servicios/EjecucionFunciones.java: /home/s4n/Documents/drones-semillero/src/test/java/co/com/s4n/semillero/ejercicio/servicios/EjecucionFunciones.java uses unchecked or unsafe operations.[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/s4n/Documents/drones-semillero/src/test/java/co/com/s4n/semillero/ejercicio/servicios/EjecucionFunciones.java: Recompile with -Xlint:unchecked for details.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/drones-semillero/src/test/java/co/com/s4n/semillero/ejercicio/servicios/EjecucionFunciones.java:93:1: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m            System.out.println(validarPosicion().get()));[0m
