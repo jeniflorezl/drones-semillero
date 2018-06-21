@@ -15,6 +15,7 @@ public class ServicioDron {
     static List<Dron> resultados = new ArrayList<>();
     static int cont = 0;
     static int cantidadAlmuerzos = 3;
+    static int drones = 20;
     static int limite = 10;
 
 
@@ -86,6 +87,7 @@ public class ServicioDron {
     }
 
     public static List<Dron> ejecutarDron(io.vavr.collection.List<String> listaRutas){
+
 
         Iterator<io.vavr.collection.List<String>> almuerzosAgru = iteradorLista(listaRutas,cantidadAlmuerzos);
         almuerzosAgru.forEach(s ->{
