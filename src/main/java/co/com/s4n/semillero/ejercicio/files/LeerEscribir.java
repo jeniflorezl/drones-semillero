@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 public class LeerEscribir {
     public static io.vavr.collection.List<String> read(){
-        String fileName = "/home/s4n/Documents/drones-semillero/src/resources/int.txt";
+        String fileName = "/home/s4n/Documents/drones-semillero/src/resources/int";
         io.vavr.collection.List<String> listAlmuerzos = io.vavr.collection.List.of();
 
         Try<Stream<String>> almuerzos = Try.of(() -> Files.lines(Paths.get(fileName)));
@@ -56,7 +56,7 @@ public class LeerEscribir {
 
     public static Try<String> write(List<Dron> results){
         Try<String> escribir = Try.of(()->{
-            FileWriter fileWriter = new FileWriter("/home/s4n/Documents/drones-semillero/src/resources/out.txt");
+            FileWriter fileWriter = new FileWriter("/home/s4n/Documents/drones-semillero/src/resources/out");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             printWriter.println("== REPORTE DE ENTREGAS ==");
             for (int i = 0; i<results.size();i++) {

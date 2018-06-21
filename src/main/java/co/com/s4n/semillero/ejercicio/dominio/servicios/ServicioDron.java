@@ -113,12 +113,6 @@ public class ServicioDron {
 
     public static void realizarEntrega(io.vavr.collection.List<String> ruta){
 
-        //Future<Dron> inicio = Future.of(() -> new Dron(0,0, Direccion.NORTE));
-
-        /*Future<String> ruta1 = Future.of(()->ruta.get(0));
-        Future<String> ruta2 = Future.of(()->ruta.get(1));
-        Future<String> ruta3 = Future.of(()->ruta.get(2));*/
-
         Dron dronInicio = new Dron(0,0,Direccion.NORTE);
         String zero = dronInicio.toString();
         String fold = ruta.fold(zero, (s1, s2) -> operar(s1, s2));
@@ -157,11 +151,9 @@ public class ServicioDron {
         Dron d = new Dron(Integer.parseInt(dron1[0]),Integer.parseInt(dron1[1]), cambiarDireccion(dron1[2]));
         Dron dronNuevo = ejecutarFuncion(d,ruta);
         Try<String> dronMoved = validarPosicion(dronNuevo);
-        //System.out.println(dronMoved.get());
         Dron dronInicio = new Dron(0,0,Direccion.NORTE);
 
         if (dronMoved.isSuccess()){
-            //System.out.println(validarPosicion().get()));
             resultados.add(dronNuevo);
         }else{
             dronNuevo = dronInicio;
@@ -173,22 +165,26 @@ public class ServicioDron {
         Dron dronR = dron;
         boolean ban = true;
         for (int j = 0; j<ruta.length();j++){
-            char c = ruta.charAt(j);
-            //Movimientos mover = Movimientos.valueOf(String.valueOf(c));
-            switch (c){
-                case 'A':
-                    dronR = ServicioDron.ahead(dronR);
-                    break;
-                case 'D':
-                    dronR = ServicioDron.right(dronR);
-                    break;
-                case 'I':
-                    dronR = ServicioDron.left(dronR);
-                    break;
-                default:
-                    System.out.println("Error, ruta invalida!");
-                    ban = false;
-                    break;
+            String c = String.valueOf(ruta.charAt(j));
+            Try<Movimientos> mover = Try.of(()-> Movimientos.valueOf(c));
+            if (mover.isSuccess()){
+                switch (mover.get()){
+                    case A:
+                        dronR = ServicioDron.ahead(dronR);
+                        break;
+                    case D:
+                        dronR = ServicioDron.right(dronR);
+                        break;
+                    case I:
+                        dronR = ServicioDron.left(dronR);
+                        break;
+                    default:
+                        break;
+                }
+            }else{
+                System.out.println("Error, ruta invalida!");
+                ban=false;
+                break;
             }
             if (ban==false){
                 break;
