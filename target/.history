@@ -1,1 +1,55 @@
 compile
+testOnly co.com.s4n.semillero.ejercicio.testMock
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+testOnly
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.EjecucionFunciones
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServicioDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
