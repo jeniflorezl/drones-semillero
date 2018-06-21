@@ -1,6 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestEscribir[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestEscribir[0m finished, took 0.01 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestEscribir[0m finished, took 0.009 sec[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestAhead[0m started[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestAhead[0m finished, took 0.001 sec[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestRight[0m started[0m
@@ -10,5 +10,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestLeft[0m started[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestLeft[0m finished, took 0.0 sec[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestEjecucionDron[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestEjecucionDron[0m finished, took 0.009 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 6 total, 0.033s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestServiciosDron[0m.[36mtestEjecucionDron[0m finished, took 0.01 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 6 total, 0.035s[0m[0m

@@ -52,3 +52,4 @@ testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
 testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
 testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
 testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
