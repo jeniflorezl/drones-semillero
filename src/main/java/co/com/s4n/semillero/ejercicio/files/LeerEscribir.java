@@ -13,14 +13,15 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class LeerEscribir {
-    public static List<String> read(){
+    public static io.vavr.collection.List<String> read(){
         String fileName = "/home/s4n/Documents/drones-semillero/src/resources/int.txt";
-        List<String> listAlmuerzos = new ArrayList<>();
+        io.vavr.collection.List<String> listAlmuerzos = io.vavr.collection.List.of();
 
         Try<Stream<String>> almuerzos = Try.of(() -> Files.lines(Paths.get(fileName)));
 
         if (almuerzos.isSuccess()){
-            listAlmuerzos = almuerzos.get().collect(Collectors.toList());
+            listAlmuerzos = io.vavr.collection.List.ofAll(almuerzos.get().collect(Collectors.toList()));
+
         }else{
             System.out.println("Error");
         }

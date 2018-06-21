@@ -58,21 +58,30 @@ public class testServiciosDron {
 
     @Test
     public void testEjecucionDron(){
-        List<Dron> resultados = Arrays.asList();
-        resultados = EjecucionFunciones.ejecutarDron();
 
-        for (int i = 0; i<resultados.size();i++){
+        io.vavr.collection.List<String> entrada = io.vavr.collection.List.of("AAAAIAAD",
+                "DDAIAD", "AAIADAD");
+        List<Dron> resultados = ServicioDron.ejecutarDron(entrada);
+
+        /*for (int i = 0; i<resultados.size();i++){
             System.out.println("("+resultados.get(i).getX()+","+resultados.get(i).getY()+")"
                     +resultados.get(i).getDireccion());
-        }
+        }*/
+        io.vavr.collection.List<Dron> salida = io.vavr.collection.List.of(
+                new Dron(-2,4, Direccion.NORTE),
+                new Dron(-1,3, Direccion.SUR),
+                new Dron(0,0,Direccion.OESTE)
+        );
 
-
+        assertEquals(salida.get(0).toString(),resultados.get(0).toString());
+        assertEquals(salida.get(1).toString(),resultados.get(1).toString());
+        assertEquals(salida.get(2).toString(),resultados.get(2).toString());
 
     }
 
     @Test
     public void testLeer(){
-        List<String> almuerzos = LeerEscribir.read();
+        io.vavr.collection.List<String> almuerzos = LeerEscribir.read();
         assertTrue(almuerzos.size()>0);
 
     }
