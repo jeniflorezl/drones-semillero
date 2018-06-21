@@ -30,6 +30,28 @@ public class LeerEscribir {
         return listAlmuerzos;
     }
 
+    public static io.vavr.collection.List<String> read2(){
+        String fileName = "/home/s4n/Documents/drones-semillero/src/resources/int";
+        io.vavr.collection.List<String> listDrones = io.vavr.collection.List.of();
+        io.vavr.collection.List<String> listArchivos = io.vavr.collection.List.of();
+        boolean ban = true;
+        while(ban==true){
+
+        }
+
+        io.vavr.collection.List<String> listAlmuerzos = io.vavr.collection.List.of();
+
+        Try<Stream<String>> almuerzos = Try.of(() -> Files.lines(Paths.get(fileName)));
+
+        if (almuerzos.isSuccess()){
+            listAlmuerzos = io.vavr.collection.List.ofAll(almuerzos.get().collect(Collectors.toList()));
+
+        }else{
+            System.out.println("Error");
+        }
+        return listAlmuerzos;
+    }
+
     public static List<Movimientos> convert(String ruta){
         char c;
         List<Movimientos> movimientos = Arrays.asList();

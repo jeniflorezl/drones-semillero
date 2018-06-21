@@ -1,3 +1,4 @@
 [0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestArchivos[0m.[36mrun[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestArchivos[0m.[36mrun[0m finished, took 0.031 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.semillero.ejercicio.servicios.[33mtestArchivos[0m.[36mrun[0m finished, took 0.034 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.037s[0m[0m
