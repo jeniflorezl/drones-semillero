@@ -152,11 +152,10 @@ public class ServicioDron {
         Dron dronNuevo = ejecutarFuncion(d,ruta);
         Try<String> dronMoved = validarPosicion(dronNuevo);
         Dron dronInicio = new Dron(0,0,Direccion.NORTE);
-
         if (dronMoved.isSuccess()){
             resultados.add(dronNuevo);
         }else{
-            dronNuevo = dronInicio;
+            dronNuevo = d;
         }
         return dronNuevo.toString();
     }
