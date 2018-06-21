@@ -26,13 +26,15 @@ public class LeerEscribir {
             System.out.println("Error");
         }
         return listAlmuerzos;
-
     }
+
+
 
     public static Try<String> write(List<Dron> results){
         Try<String> escribir = Try.of(()->{
             FileWriter fileWriter = new FileWriter("/home/s4n/Documents/drones-semillero/src/resources/out.txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.println("== REPORTE DE ENTREGAS ==");
             for (int i = 0; i<results.size();i++) {
                 printWriter.println("("+results.get(i).getX()+","+results.get(i).getY()+") direcciòn "
                         +results.get(i).getDireccion());

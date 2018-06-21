@@ -98,6 +98,10 @@ public class ServicioDron {
         return resultados;
     }
 
+    public void generarArchivo(List<Dron> resultados){
+        Try<String> writeFile = escribirDrones(resultados);
+    }
+
     public io.vavr.collection.List<String> leerRutas(){
         return LeerEscribir.read();
     }

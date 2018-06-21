@@ -80,6 +80,13 @@ public class testServiciosDron {
     }
 
     @Test
+    public void run(){
+        io.vavr.collection.List<String> rutas = LeerEscribir.read();
+        List<Dron> resultados = ServicioDron.ejecutarDron(rutas);
+        Try<String> retorno = LeerEscribir.write(resultados);
+    }
+
+    @Test
     public void testLeer(){
         io.vavr.collection.List<String> almuerzos = LeerEscribir.read();
         assertTrue(almuerzos.size()>0);
