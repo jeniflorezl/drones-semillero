@@ -89,9 +89,13 @@ public class EjecucionFunciones {
         Dron dronNuevo = ejecutarFuncion(d,ruta);
         Try<String> dronMoved = validarPosicion(dronNuevo);
         //System.out.println(dronMoved.get());
+        Dron dronInicio = new Dron(0,0,Direccion.NORTE);
+
         if (dronMoved.isSuccess()){
             //System.out.println(validarPosicion().get()));
             resultados.add(dronNuevo);
+        }else{
+            dronNuevo = dronInicio;
         }
         return dronNuevo.toString();
     }
@@ -120,7 +124,6 @@ public class EjecucionFunciones {
             if (ban==false){
                 break;
             }
-
         }
         return dronR;
     }
@@ -129,10 +132,10 @@ public class EjecucionFunciones {
         Dron d = dron;
         Integer x = dron.getX();
         Integer y = dron.getY();
-        if (x<=limite && y<=limite){
+        if (x<=limite && x>= -limite && y<=limite && y>= -limite){
             return Try.of(()-> "ok");
         }else{
-            return Try.of(()-> { throw new Error("Error 1");});
+            return Try.of(()-> { throw new Error("Error");});
         }
     }
 }

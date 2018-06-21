@@ -21,7 +21,6 @@ public class LeerEscribir {
 
         if (almuerzos.isSuccess()){
             listAlmuerzos = almuerzos.get().collect(Collectors.toList());
-            //listAlmuerzos = almuerzos.get().collect(Collectors.toList());
         }else{
             System.out.println("Error");
         }
@@ -40,7 +39,6 @@ public class LeerEscribir {
             printWriter.close();
             return "ok";
         });
-
         if (escribir.isSuccess()){
             return Try.of(()->"archivo generado correctamente.");
         }else{
