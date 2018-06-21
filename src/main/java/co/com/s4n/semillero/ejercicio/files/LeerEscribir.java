@@ -1,6 +1,7 @@
 package co.com.s4n.semillero.ejercicio.files;
 
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
+import co.com.s4n.semillero.ejercicio.dominio.vo.Movimientos;
 import io.vavr.control.Try;
 
 import java.io.FileWriter;
@@ -8,6 +9,7 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -26,6 +28,28 @@ public class LeerEscribir {
             System.out.println("Error");
         }
         return listAlmuerzos;
+    }
+
+    public static List<Movimientos> convert(String ruta){
+        char c;
+        List<Movimientos> movimientos = Arrays.asList();
+        Movimientos mov = Movimientos.A;
+        for(int i=0; i < ruta.length(); i++){
+            c = ruta.charAt(i);
+            switch (c){
+                case 'A':
+                    mov = Movimientos.A;
+                    break;
+                case 'D':
+                    mov = Movimientos.D;
+                    break;
+                case 'I':
+                    mov = Movimientos.I;
+                    break;
+            }
+            movimientos.add(mov);
+        }
+        return movimientos;
     }
 
 

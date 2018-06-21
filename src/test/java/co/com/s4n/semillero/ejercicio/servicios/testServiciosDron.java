@@ -63,10 +63,10 @@ public class testServiciosDron {
                 "DDAIAD", "AAIADAD");
         List<Dron> resultados = ServicioDron.ejecutarDron(entrada);
 
-        /*for (int i = 0; i<resultados.size();i++){
-            System.out.println("("+resultados.get(i).getX()+","+resultados.get(i).getY()+")"
+        for (int i = 0; i<resultados.size();i++){
+            System.out.println("resultados test eje ("+resultados.get(i).getX()+","+resultados.get(i).getY()+")"
                     +resultados.get(i).getDireccion());
-        }*/
+        }
         io.vavr.collection.List<Dron> salida = io.vavr.collection.List.of(
                 new Dron(-2,4, Direccion.NORTE),
                 new Dron(-1,3, Direccion.SUR),
@@ -79,12 +79,7 @@ public class testServiciosDron {
 
     }
 
-    @Test
-    public void run(){
-        io.vavr.collection.List<String> rutas = LeerEscribir.read();
-        List<Dron> resultados = ServicioDron.ejecutarDron(rutas);
-        Try<String> retorno = LeerEscribir.write(resultados);
-    }
+
 
     @Test
     public void testLeer(){
