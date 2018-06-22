@@ -1,0 +1,2 @@
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/drones-semillero/src/test/java/co/com/s4n/semillero/ejercicio/servicios/testServiciosDron.java:81:1:  io.vavr.collection.List<java.lang.String> cannot be converted to java.util.List<java.lang.String>[0m
+[0m[[0m[31merror[0m] [0m[0m        List<String> almuerzos = LeerEscribir.read();[0m

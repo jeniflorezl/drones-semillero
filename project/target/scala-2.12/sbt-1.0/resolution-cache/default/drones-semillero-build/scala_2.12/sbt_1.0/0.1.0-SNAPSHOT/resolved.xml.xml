@@ -4,7 +4,7 @@
 		module="drones-semillero-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180619163011"
+		publication="20180621081337"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

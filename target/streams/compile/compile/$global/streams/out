@@ -1,0 +1,15 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Jeniflorezl\Documents\Seven4n\drones-semillero\src\main\java\co\com\s4n\semillero\ejercicio\dominio\servicios\ServicioDron.java:147:1:  error: illegal character: '\u00b1'[0m
+[0m[[0m[31merror[0m] [0m[0m    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int tamaÃ±o){[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                              ^^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Jeniflorezl\Documents\Seven4n\drones-semillero\src\main\java\co\com\s4n\semillero\ejercicio\dominio\servicios\ServicioDron.java:147:1:  error: <identifier> expected[0m
+[0m[[0m[31merror[0m] [0m[0m    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int tamaÃ±o){[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                ^^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Jeniflorezl\Documents\Seven4n\drones-semillero\src\main\java\co\com\s4n\semillero\ejercicio\dominio\servicios\ServicioDron.java:148:1:  error: illegal character: '\u00b1'[0m
+[0m[[0m[31merror[0m] [0m[0m        return almuerzos.grouped(tamaÃ±o);[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Jeniflorezl\Documents\Seven4n\drones-semillero\src\main\java\co\com\s4n\semillero\ejercicio\dominio\servicios\ServicioDron.java:148:1:  error: not a statement[0m
+[0m[[0m[31merror[0m] [0m[0m        return almuerzos.grouped(tamaÃ±o);[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Jeniflorezl\Documents\Seven4n\drones-semillero\src\main\java\co\com\s4n\semillero\ejercicio\dominio\servicios\ServicioDron.java:148:1:  error: ';' expected[0m
+[0m[[0m[31merror[0m] [0m[0m        return almuerzos.grouped(tamaÃ±o);[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^^[0m
