@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cde09f8-7bdd-4958-a6de-0bb9c292b5ce" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/s4n/semillero/ejercicio/files/LeerEscribir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/s4n/semillero/ejercicio/files/LeerEscribir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/s4n/semillero/ejercicio/servicios/testServiciosDron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/s4n/semillero/ejercicio/servicios/testServiciosDron.java" afterDir="false" />
-    </list>
+    <list default="true" id="8cde09f8-7bdd-4958-a6de-0bb9c292b5ce" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -82,11 +78,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="77" />
-    <option name="y" value="47" />
-    <option name="width" value="1279" />
-    <option name="height" value="701" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="76" />
+    <option name="y" value="46" />
+    <option name="width" value="1280" />
+    <option name="height" value="702" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -453,7 +449,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529443804803</updated>
-      <workItem from="1529626713718" duration="1337000" />
+      <workItem from="1529626713718" duration="1932000" />
     </task>
     <servers />
   </component>
@@ -490,10 +486,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356000" />
+    <option name="totallyTimeSpent" value="951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
