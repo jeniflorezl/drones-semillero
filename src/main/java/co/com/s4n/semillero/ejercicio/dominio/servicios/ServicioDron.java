@@ -93,11 +93,6 @@ public class ServicioDron {
         almuerzosAgru.forEach(s ->{
             realizarEntrega(s);
         });
-
-        for (int j = 0; j < resultados.size(); j++){
-            System.out.println("resultados "+resultados.get(j));
-        }
-
         return resultados;
     }
 
@@ -144,8 +139,8 @@ public class ServicioDron {
         return dir;
     }
 
-    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int tamaño){
-        return almuerzos.grouped(tamaño);
+    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int size){
+        return almuerzos.grouped(size);
     }
 
     public static String operar(String posicion, String ruta){

@@ -6,8 +6,6 @@ import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import co.com.s4n.semillero.ejercicio.files.LeerEscribir;
 import io.vavr.control.Try;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,8 +13,6 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-//@RunWith(PowerMockRunner.class)
-//@PrepareForTestI(fullQualityfiedNames = "co.com.s4n.semillero.ejercicio.servicios")
 public class testServiciosDron {
 
     @Test
@@ -63,10 +59,6 @@ public class testServiciosDron {
                 "DDAIAD", "AAIADAD");
         List<Dron> resultados = ServicioDron.ejecutarDron(entrada);
 
-        for (int i = 0; i<resultados.size();i++){
-            System.out.println("resultados test eje ("+resultados.get(i).getX()+","+resultados.get(i).getY()+")"
-                    +resultados.get(i).getDireccion());
-        }
         io.vavr.collection.List<Dron> salida = io.vavr.collection.List.of(
                 new Dron(-2,4, Direccion.NORTE),
                 new Dron(-1,3, Direccion.SUR),

@@ -53,4 +53,17 @@ testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
 testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
 testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
 testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
-git status
+clena
+clean
+compile
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+compile
+testOnly co.com.s4n.semillero.ejercicio.servicios.testServiciosDron
+testOnly co.com.s4n.semillero.ejercicio.servicios.testArchivos
