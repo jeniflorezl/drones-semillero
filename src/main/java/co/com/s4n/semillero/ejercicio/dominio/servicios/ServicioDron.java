@@ -15,6 +15,7 @@ public class ServicioDron {
     static List<Dron> resultados = new ArrayList<>();
     static int cont = 0;
     static int cantidadAlmuerzos = 3;
+    static int drones = 20;
     static int limite = 10;
 
 
@@ -87,15 +88,11 @@ public class ServicioDron {
 
     public static List<Dron> ejecutarDron(io.vavr.collection.List<String> listaRutas){
 
+
         Iterator<io.vavr.collection.List<String>> almuerzosAgru = iteradorLista(listaRutas,cantidadAlmuerzos);
         almuerzosAgru.forEach(s ->{
             realizarEntrega(s);
         });
-
-        for (int j = 0; j < resultados.size(); j++){
-            System.out.println("resultados "+resultados.get(j));
-        }
-
         return resultados;
     }
 
@@ -142,8 +139,8 @@ public class ServicioDron {
         return dir;
     }
 
-    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int tamaño){
-        return almuerzos.grouped(tamaño);
+    public static Iterator<io.vavr.collection.List<String>> iteradorLista(io.vavr.collection.List<String> almuerzos, int size){
+        return almuerzos.grouped(size);
     }
 
     public static String operar(String posicion, String ruta){
